@@ -290,7 +290,6 @@
           <button id="homeM1">−1</button>
           <button class="primary" id="homeP1">+1</button>
           <button class="primary" id="homeP2">+2</button>
-          <button class="primary" id="homeP3">+3</button>
         </div>
         <div class="fouls-block">
           <div class="fouls-label">犯規次數</div>
@@ -315,7 +314,6 @@
           <button id="awayM1">−1</button>
           <button class="primary" id="awayP1">+1</button>
           <button class="primary" id="awayP2">+2</button>
-          <button class="primary" id="awayP3">+3</button>
         </div>
         <div class="fouls-block">
           <div class="fouls-label">犯規次數</div>
@@ -655,7 +653,6 @@
 
     document.getElementById(prefix+'P1').onclick = ()=>{ score++; renderScore(); };
     document.getElementById(prefix+'P2').onclick = ()=>{ score+=2; renderScore(); };
-    document.getElementById(prefix+'P3').onclick = ()=>{ score+=3; renderScore(); };
     document.getElementById(prefix+'M1').onclick = ()=>{ score = Math.max(0,score-1); renderScore(); };
 
     document.getElementById(prefix+'FoulPlus').onclick = ()=>{ fouls++; renderFouls(); };
